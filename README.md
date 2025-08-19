@@ -4,6 +4,10 @@ Este projeto consiste em uma API RESTful desenvolvida em Python, utilizando o fr
 Como Executar o Projeto
 Para colocar o projeto em funcionamento, siga os passos a seguir:
 
+Em primeiro lugar, a execução principal do sistema, é o arquivo streamlit_app.py.  
+Você só vai executar ele depois do app.py, porque o app.py tem o carregamento e o salvamento tanto do cadastro e tanto dos livros. 
+
+
 Instalação das dependências: Certifique-se de que o Python está instalado em seu sistema. Navegue até o diretório do projeto no terminal e instale as bibliotecas necessárias listadas no arquivo requirements.txt usando o comando:
 
 pip install -r requirements.txt
@@ -72,3 +76,4 @@ O usuário avalia os livros, e cada avaliação é enviada para a API através d
 Ao clicar no botão "Gerar Recomendações", a interface faz uma requisição para a rota /recommend/<user_id>.
 
 Na API, a função recommend_books analisa a quantidade de avaliações do usuário. Se forem menos de 3, a recomendação é baseada no gênero preferido. Se forem 3 ou mais, o modelo de machine learning é ativado para prever as notas e retornar os livros com maior pontuação.
+
